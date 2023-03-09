@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+
+  title: "argo-rollouts"
+  x-cortex-tag: "argo-rollouts"
+  x-cortex-type: service
+  description: "Please put a description here."
+  x-cortex-git:
+    github:
+      repository: "test-repo"
+  x-cortex-owners:
+    - type: group
+      name: "sre"
+      provider: CORTEX # assumes teams already imported from github
+
+  # this is effectively a list of tags used to filter services in the UI
+  # currently our only use-case is for filtering services by primary language
+  x-cortex-groups:
+    - "Go"
+
+  # each service should have an OpsGenie schedule
+  x-cortex-oncall:
+    opsgenie:
+      type: SCHEDULE
+      id: "SRE_schedule"
+
+  x-cortex-link:
+    - name: "argo-calendar"
+      type: buildkite
+      url: https://buildkite.com/rokt/argo-calendar
+  x-cortex-link:
+    - name: "argo"
+      type: buildkite
+      url: https://buildkite.com/rokt/argo
+
+  # additional links may be included here
+  # there's no need to link content the root folder's `./docs` as it gets picked up automatically
+  # consider including resources such as DD dashboards where possible
+  #  - name: RTS Dashboard
+  #    type: dashboard
+  #    url: https://rokt.datadoghq.com/dashboard/ax6-s8t-6dx/release-tracking-services?from_ts=1666560110637&to_ts=1666574510637&live=true
