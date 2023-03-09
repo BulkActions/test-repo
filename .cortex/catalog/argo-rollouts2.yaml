@@ -28,7 +28,6 @@ info:
     - name: "argo-calendar"
       type: buildkite
       url: https://buildkite.com/rokt/argo-calendar
-  x-cortex-link:
     - name: "argo"
       type: buildkite
       url: https://buildkite.com/rokt/argo
