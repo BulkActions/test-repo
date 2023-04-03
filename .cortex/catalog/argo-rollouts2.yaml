@@ -4,11 +4,11 @@ info:
   title: "argo-rollouts2"
   x-cortex-tag: "argo-rollouts"
   x-cortex-type: service
-  description: >
+  description: |
     Please put a description here.
   x-cortex-git:
     github:
-      repository: "git@github.com:ROKT/test-repo.git"
+      repository: "ROKT/test-repo"
   x-cortex-owners:
     - type: group
       name: "sre"
