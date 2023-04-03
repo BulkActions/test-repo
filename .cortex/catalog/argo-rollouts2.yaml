@@ -4,14 +4,15 @@ info:
   title: "argo-rollouts2"
   x-cortex-tag: "argo-rollouts"
   x-cortex-type: service
-  description: "Please put a description here."
+  description: >
+    Please put a description here.
   x-cortex-git:
     github:
-      repository: "test-repo"
+      repository: "git@github.com:ROKT/test-repo.git"
   x-cortex-owners:
     - type: group
       name: "sre"
-      provider: CORTEX # assumes teams already imported from github
+      provider: CORTEX
 
   # this is effectively a list of tags used to filter services in the UI
   # currently our only use-case is for filtering services by primary language
